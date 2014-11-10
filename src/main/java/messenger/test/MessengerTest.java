@@ -23,10 +23,8 @@ public class MessengerTest {
 	public void test() {
 		
 		m.send("Hi");
-		m.send("Diogo","How are you");
-		
-		
-		assertThat("teste", is("teste"));
+			m.send("Diogo","How are you");
+			assertThat("teste", is("teste"));
 		
 	}
 	

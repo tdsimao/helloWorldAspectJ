@@ -7,7 +7,7 @@ public aspect FirstAspect {
 	pointcut secureAccess() 
 		: execution(* Messenger.send(..)); 
 	 before() : secureAccess() { 
-	 System.out.println("Checking and authenticating user"); 
-	 authenticator.authenticate(); 
+		 System.out.println("Checking and authenticating user"); 
+		 authenticator.authenticate(); 
 	 } 
 }
