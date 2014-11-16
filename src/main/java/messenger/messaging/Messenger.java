@@ -1,10 +1,10 @@
 package messaging;
 
-import security.Authenticator;
+//import security.Authenticator;
 
 public class Messenger { 
 	
-	Authenticator authenticator = new Authenticator();
+	//Authenticator authenticator = new Authenticator();
 	
 	public void send(String s) {
 		//authenticator.authenticate();
