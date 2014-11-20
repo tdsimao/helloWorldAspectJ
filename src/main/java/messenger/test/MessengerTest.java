@@ -13,7 +13,7 @@ import org.junit.Test;
 
 public class MessengerTest {
 	Messenger m;
-	
+
 	@Before
 	public void setUp() throws Exception {
 		m = new Messenger();
@@ -21,12 +21,12 @@ public class MessengerTest {
 
 	@Test
 	public void test() {
-		
+
 		m.send("Hi");
-			m.send("Diogo","How are you");
-			assertThat("teste", is("teste"));
-		
+		m.send("Diogo","How are you");
+		assertThat("teste", is("teste"));
+
 	}
-	
+
 
 }
