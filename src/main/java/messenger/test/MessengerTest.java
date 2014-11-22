@@ -21,7 +21,7 @@ public class MessengerTest {
 
 	@Test
 	public void test() {
-
+		m.setUser("Thiago");
 		m.send("Hi");
 		m.send("Diogo","How are you");
 		assertThat("teste", is("teste"));
