@@ -17,17 +17,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Authenticator {
-private ThreadLocal<String> authenticatedUser = new ThreadLocal<String>();
+	private ThreadLocal<String> authenticatedUser = new ThreadLocal<String>();
 	
-	public void authenticate() {
+	public String authenticate() {
 		if (isAuthenticated()) {
-			return;
+			return authenticatedUser.get();
 		}
 		String[] userNamePassword = getUserNamePassword();
 		if (!userNamePassword[0].equals(userNamePassword[1])) {
 			throw new AuthenticationException("User/password didn't match");
 		}
 		authenticatedUser.set(userNamePassword[0]);
+		return authenticatedUser.get();
 	}
 	
 	public boolean isAuthenticated() {

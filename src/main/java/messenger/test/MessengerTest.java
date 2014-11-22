@@ -1,7 +1,6 @@
 package test;
 
 import static org.junit.Assert.assertThat;
-import static org.junit.Assert.fail;
 
 import static org.hamcrest.CoreMatchers.is;
 

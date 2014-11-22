@@ -1,4 +1,5 @@
 package my_aspects;
+
 import messaging.Messenger;
 import security.Authenticator;
 
@@ -11,6 +12,15 @@ public aspect Security {
 
 	before() : secureAccess() {
 		System.out.println("Checking and authenticating user"); 
-		authenticator.authenticate(); 
+		authenticator.authenticate();
+	}  
+
+	
+	// get Object reference
+	pointcut secureAccess2(Messenger m) 
+		: target(m) && execution(* Messenger.send(..));
+	
+	before(Messenger m) : secureAccess2(m) {
+		System.out.println("Authenticating :"+m.getUser());
 	}  
 }
