@@ -20,11 +20,10 @@ public class MessengerTest {
 
 	@Test
 	public void test() {
-		m.setUser("Thiago");
-		m.send("Hi");
-		m.send("Diogo","How are you");
+		m.setUser("João");
+		m.send("Boa tarde!");
+		m.send("Maria","tudo bem?");
 		assertThat("teste", is("teste"));
-
 	}
 
 
