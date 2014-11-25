@@ -1,9 +1,5 @@
 package test;
 
-import static org.junit.Assert.assertThat;
-
-import static org.hamcrest.CoreMatchers.is;
-
 import messaging.Messenger;
 
 import org.junit.Before;
