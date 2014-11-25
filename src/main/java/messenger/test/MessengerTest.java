@@ -23,7 +23,6 @@ public class MessengerTest {
 		m.setUser("João");
 		m.send("Boa tarde!");
 		m.send("Maria","tudo bem?");
-		assertThat("teste", is("teste"));
 	}
 
 
