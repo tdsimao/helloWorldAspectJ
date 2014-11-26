@@ -1,8 +1,14 @@
 package main;
 
 public class Account {
-	static int _balance;
+	private float _balance;
+	public Account() {
+		_balance = 0;
+	}
+	public Account(float _balance) {
+		this._balance = _balance;
+	}
 	void credit(float amount){ 
-		_balance += amount;    
+		this._balance += amount;    
 	}
 }

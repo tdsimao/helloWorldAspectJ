@@ -1,6 +1,6 @@
 package messaging;
 
-//import security.Authenticator;
+import security.Authenticator;
 
 public class Messenger { 
 	private String user;
