@@ -5,8 +5,9 @@ public class Account {
 	public Account() {
 		_balance = 0;
 	}
-	public Account(float _balance) {
-		this._balance = _balance;
+	public Account(float balance) {
+		//this._balance = _balance;
+		_balance = balance;
 	}
 	void credit(float amount){ 
 		this._balance += amount;    

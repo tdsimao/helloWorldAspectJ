@@ -16,7 +16,7 @@ public class MessengerTest {
 
 	@Test
 	public void test() {
-		m.setUser("João");
+		m.setUser("teste");
 		m.send("Boa tarde!");
 		m.send("Maria","tudo bem?");
 	}
